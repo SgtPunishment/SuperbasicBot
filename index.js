@@ -6,7 +6,7 @@ client.on('ready',() => {
   console.log('I\'m Online\nI\'m Online');
 });
 
-const prefix = '~';
+const prefix = settings.prefix;
 client.on('message', message => {
   if (message.author === client.user) return;
   if (message.content.startsWith(prefix + 'ping')) {
